@@ -80,7 +80,7 @@ if "page" not in st.session_state: st.session_state.page = "home"
 # Home Page
 # -----------------------------
 def show_homepage():
-    st.image("https://i.imgur.com/7pXcJqG.png", width=120)  # Example logo
+    st.image("https://media.istockphoto.com/id/1386179512/photo/computer-hacker-stealing-data-from-a-laptop.jpg?s=2048x2048&w=is&k=20&c=FHJY--2bDKL_TCOEcfBNxw59OiZIcThyw-WjZI417tw=", width=120)  # Example logo
     st.header("Welcome to QuantumLock")
     st.write("Securely store your passwords, PINs, and important notes.")
     col1, col2 = st.columns(2)
@@ -175,3 +175,4 @@ else:
     if st.session_state.page=="home": show_homepage()
     elif st.session_state.page=="signup": show_signup()
     elif st.session_state.page=="signin": show_signin()
+
